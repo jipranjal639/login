@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="  
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sing in</title>
+</head>
+<header>
+    <h2>RAVI KUMAR</h2>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Sub</a>
+        <a href="">Conect</a>
+         <a href="">About</a>
+    </nav>
+    <div class="Sing-in-up">
+        <button type="button" onclick="popup('login-popup')">Login </button>
+         <button type="button" onclick="popup('REGISTER-popup')">REGISTER</button>
+    </div>
+<!------------------Popup cantainer-------------------------->
+
+    <div class="popup-container" id="login-popup">
+        <div class="popup">
+            <from>
+                <h2>
+                    <span>login-USER  </span>
+                    <button type="reset" onclick="popup('login-popup')">X</button>
+                </h2>
+                <input type="text" placeholder="Email|or User name">
+                <input type="Date" placeholder="00/00/0000"        >
+                <input type="Phone-Number" placeholder="Number">
+                <input type="password" placeholder="password">                
+                <button type="submit" class="login-btn">Login</button>
+            </from>
+        </div>
+    </div>
+
+
+    <div class="popup-container" id="REGISTER-popup">
+        <div class=" register popup">
+            <from>
+                <h2>
+                    <span>USER REGISTER</span>
+                    <button type="reset" onclick="popup('REGISTER-popup')">X</button>
+                </h2>
+                <input type="text" placeholder=" Full Name">
+                <input type="text" placeholder=" User name">
+                <input type="email" placeholder=" Email">
+                <input type="Phone-Number" placeholder=" Number">
+                <input type="password" placeholder="password">
+                <button type="submit" class="REGISTER-btn">REGISTER</button>
+            </from>
+        </div>
+    </div>
+
+   <script>
+
+
+    function popup(popup_name)
+    {
+        get_popup=document.getElementById(popup_name);
+        if(get_popup.style.display=="flex")
+
+        {
+            get_popup.style.display="none";
+        }
+
+        else
+        {
+            get_popup.style.display="flex";
+        }
+    }
+
+
+   </script>
+        
+</header>
+<body>
+    
+</body>
+</html>
