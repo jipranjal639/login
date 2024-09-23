@@ -1,2 +1,3 @@
 # login
-register
+REGISTER
+login
